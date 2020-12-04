@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Titre head</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/hello-icon-152.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="red" />
+    <meta name="apple-mobile-web-app-title" content="title apple" />
+    <script src="js/main.js" defer></script>
+    <!-- defer = execution du script après que le cahrgement du  document -->
+  </head>
+  <body class="fullscreen">
+    <div class="container">
+      <h1 class="title">Mastermind</h1>
+      <button id="start" class="btn" onclick="seqOrdi()">(Re)Commencer</button>
+      <br />
+      <h2 id="wonlose"> </h2>
+      <br />
+      <h2 id="sequence"> </h2>
+      <br />
+      <h2 id="BienP"> </h2>
+      <h2 id="MalP"> </h2>
+      <br />
+      <button id="uno" class="hidden btn" onclick="oneClick()">1</button>
+      <button id="dos" class="hidden btn" onclick="twoClick()">2</button>
+      <button id="tres" class="hidden btn" onclick="threeClick()">3</button>
+      <button id="quatro" class="hidden btn" onclick="fourClick()">4</button>
+      <br />
+      <br />
+      <button id="val" class="hidden btn" onclick="seqJoueur()">Valider</button>
+    </div>
+  </body>
+</html>
