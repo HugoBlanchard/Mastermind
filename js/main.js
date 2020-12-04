@@ -59,7 +59,7 @@ function seqJoueur() {
     }
   }
 
-  console.log(BP + " bien placé");
+  console.log(BP + " bien(s) placé(s)");
   document.getElementById("BienP").innerHTML = BP + " bien placé";
 
   // déterminer le nombre de chiffres mal placés
@@ -98,7 +98,7 @@ function seqJoueur() {
     MP++;
   }
 
-  console.log(MP + " mal placé");
+  console.log(MP + " mal(s) placé(s)");
   document.getElementById("MalP").innerHTML = MP + " mal placé";
 
   // supprimer les données du tableau tentative
