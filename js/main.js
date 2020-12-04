@@ -19,6 +19,7 @@ function seqOrdi() {
   val.classList.remove("hidden");
   sequence.classList.remove("hidden");
   wonlose.classList.add("hidden");
+
   for (var i = 0; i < 4; i++) {
     secret[i] = Math.floor(Math.random() * 4 + 1);
   }
@@ -47,10 +48,11 @@ function fourClick() {
 
 var nbtent = 0;
 
+// lorsque le joueur appuie sur "Valider"
 function seqJoueur() {
   console.log(tentative);
 
-  // déterminer le nombre de chiffres mal placés
+  // déterminer le nombre de chiffres bien placés
   var BP = 0;
 
   for (var i = 0; i < 4; i++) {
